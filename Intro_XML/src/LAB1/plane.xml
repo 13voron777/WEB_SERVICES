@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<root xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation = "plane1.xsd">
+
+    <plane id="BX-DSL">
+        <model>Boeing 737</model>
+        <origin>USA</origin>
+        <chars>
+            <type>passenger</type>
+            <crew_seats>8</crew_seats>
+            <load_capacity>5000</load_capacity>
+            <passengers>200</passengers>
+            <radar>yes</radar>
+        </chars>
+        <parameters>
+            <length>100</length>
+            <width>12</width>
+            <height>5</height>
+        </parameters>
+        <price currency="USD">100_000_000</price>
+    </plane>
+
+    <plane id="SR-LSM">
+        <model>Airbus A330</model>
+        <origin>France</origin>
+        <chars>
+            <type>passenger</type>
+            <crew_seats>7</crew_seats>
+            <load_capacity>4800</load_capacity>
+            <passengers>196</passengers>
+            <radar>yes</radar>
+        </chars>
+        <parameters>
+            <length>90</length>
+            <width>10</width>
+            <height>5</height>
+        </parameters>
+        <price currency="USD">95_000_000</price>
+    </plane>
+
+</root>
