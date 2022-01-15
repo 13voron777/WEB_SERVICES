@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="root" type="rootType"/>
+
+  <xs:complexType name="countryType"> <!-- комплексный элемент -->
+    <xs:sequence>
+
+      <xs:element name="name"> <!-- обычный элемент -->
+
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Ukraine"/>
+            <xs:enumeration value="Lithuania"/>
+          </xs:restriction>
+        </xs:simpleType>
+
+      </xs:element>
+
+
+      <xs:element name="capital">
+
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Kiev"/>
+            <xs:enumeration value="Wilnus"/>
+          </xs:restriction>
+        </xs:simpleType>
+
+      </xs:element>
+
+
+      <xs:element name="description">
+
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Ukraine is..."/>
+            <xs:enumeration value="Lithuania is..."/>
+          </xs:restriction>
+        </xs:simpleType>
+
+      </xs:element>
+
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="countryCode" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="rootType">
+    <xs:sequence>
+      <xs:element type="countryType" name="country" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

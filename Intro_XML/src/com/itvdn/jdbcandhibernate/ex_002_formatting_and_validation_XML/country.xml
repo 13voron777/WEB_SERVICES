@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+<root xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation = "country1.xsd">
+
+    <country countryCode="ua">
+        <name>Ukraine</name>
+        <capital>Kiev</capital>
+        <description>Ukraine is...</description>
+<!--        <visa_cost currency="usd">33.4</visa_cost>-->
+    </country>
+
+    <country countryCode = "lv">
+        <name>Lithuania</name>
+        <capital>Wilnus</capital>
+        <description>Lithuania is...</description>
+<!--        <visa_cost currency="usd">33.4</visa_cost>-->
+    </country>
+
+<!--    <country countryCode="de">-->
+<!--        <name>Germany</name>-->
+<!--        <capital>Berlin</capital>-->
+<!--        <description>Germany is...</description>-->
+<!--&lt;!&ndash;        <visa_cost currency="usd">33.4</visa_cost>&ndash;&gt;-->
+<!--    </country>-->
+
+
+</root>
